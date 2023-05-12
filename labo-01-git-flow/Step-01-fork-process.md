@@ -118,50 +118,95 @@ resource "aws_instance" "app_server" {
 
 ```
 [INPUT]
-//TODO
+git add .
+git commit -m "feat:add basic terraform script"
 
 [OUTPUT]
-//TODO
+[feature/terraformBasicScript 780819c] feat:add basic terraform script
+ 4 files changed, 89 insertions(+), 26 deletions(-)
+ create mode 100644 labo-01-git-flow/screenshots/1.PNG
+ create mode 100644 labo-01-git-flow/script
 ```
 
 * [ ] Finish the feature
 
 ```
 [INPUT]
-//TODO
+git stash
 
 [OUTPUT]
-//TODO
+Saved working directory and index state WIP on feature/terraformBasicScript: 780819c feat:add basic terraform script
+
+[INPUT]
+git flow feature finish terraformBasicScript
+
+[OUTPUT]
+Switched to branch 'develop'
+Updating 3192b2b..780819c
+Fast-forward
+ labo-01-git-flow/Step-01-fork-process.md  |  61 ++++++++++++++++++++++++------
+ labo-01-git-flow/Step-02-prerequisites.md |  31 ++++++++-------
+ labo-01-git-flow/screenshots/1.PNG        | Bin 0 -> 6276 bytes
+ labo-01-git-flow/script                   |  23 +++++++++++
+ 4 files changed, 89 insertions(+), 26 deletions(-)
+ create mode 100644 labo-01-git-flow/screenshots/1.PNG
+ create mode 100644 labo-01-git-flow/script
+Deleted branch feature/terraformBasicScript (was 780819c).
+
+Summary of actions:
+- The feature branch 'feature/terraformBasicScript' was merged into 'develop'
+- Feature branch 'feature/terraformBasicScript' has been locally deleted
+- You are now on branch 'develop'
 ```
 
 * Push this modification on your repository
 
 ```
 [INPUT]
-//TODO
+git push --set-upstream origin develop
 
 [OUTPUT]
-//TODO
+Exception non gérée : System.ComponentModel.Win32Exception: Handle de fenêtre non valide
+   à MS.Win32.ManagedWndProcTracker.HookUpDefWindowProc(IntPtr hwnd)
+   à MS.Win32.ManagedWndProcTracker.OnAppDomainProcessExit()
+   à MS.Internal.ShutDownListener.HandleShutDown(Object sender, EventArgs e)
+info: please complete authentication in your browser...
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 8.72 KiB | 8.72 MiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/Sacha-Usan/Labo-Master/pull/new/develop
+remote:
+To https://github.com/Sacha-Usan/Labo-Master.git
+ * [new branch]      develop -> develop
+branch 'develop' set up to track 'origin/develop'.
 ```
 
 * What happens to the feature/branch ?
 
 ```
-//TODO
-Add your answer with command line used to validate your analysis.
+Il a été enlevé
+
+[INPUT]
+git branch
+
+[OUTPUT]
+* develop
+  main
 ```
 
 * Open a pull request comparing your develop branch to your main
 * Assign the pull request to your partner
 
-```
-//TODO
-Screenshot pull request on github
-```
+![image2](screenshots/2.PNG)
+![image3](screenshots/3.PNG)
+
 
 * Notify him using a issue "Could you please review my pull request ?"
 
-```
-//TODO
-Screenshot issue on github
-```
+![image4](screenshots/4.PNG)

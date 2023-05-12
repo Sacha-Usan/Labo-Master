@@ -86,12 +86,21 @@ done
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+
 * [ ] See your data (after the installation)
+
+![image7](screenshots/7.PNG)
+
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * [ ] Observe the Dashboard displaying your vm's
 
+![image1](screenshots/1.PNG)
+
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>NewRelic's Dashboard</p></figcaption></figure>
 
 * [ ] Repeat this process for your Windows Vm.
+
+![image2](screenshots/2.PNG)
+![image3](screenshots/3.PNG)
