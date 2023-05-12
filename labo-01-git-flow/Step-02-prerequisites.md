@@ -13,26 +13,23 @@ Pour Linux, [here is the procedure.](https://howtoinstall.co/en/git-flow)
 
 ```
 [INPUT]
-//TODO
-
-[OUTPUT]
-//TODO
+choco install git.install
 ```
 
 * [ ] Confirm the installed version
 
 ```
 [INPUT]
-//TODO
+git flow version
 
 [OUTPUT]
-//TODO
+1.12.3 (AVH Edition)
 ```
 
 * [ ] What do you think about this release?
 
 ```
-//TODO
+source : https://github.com/petervanderdoes/gitflow-avh/releases/tag/1.12.3
 ```
 
 ## What's git-flow, branches feature.
@@ -44,13 +41,19 @@ Pour Linux, [here is the procedure.](https://howtoinstall.co/en/git-flow)
 * [ ] Which branches are persistent and what do they contain?
 
 ```
-//TODO
+main et develop
+
+main : branche de production
+develop : branche de la prochaine version
 ```
 
 * [ ] Why do we have to merge hotfix in both master and develop branches, but not into all active feature branches?
 
 ```
-//TODO
+hotfix sert à corriger les bugs présent dans la branche de production
+c'est pourquoi il faut le merger sur main et develop
+
+contrairement aux autres branches qui sont temporaires et servant à rajouter des nouvelles fonctionnalitées
 ```
 
 ## Initialize git flow on an existing project
@@ -58,13 +61,13 @@ Pour Linux, [here is the procedure.](https://howtoinstall.co/en/git-flow)
 * [ ] What happens when you run the "git flow init" command on an existing local repository?
 
 ```
-//TODO
+créer la branche develop et nous y déplace dessus
 ```
 
 * [ ] When do we need to make this git command?
 
 ```
-//TODO
+après avoir cloné un dépôt
 ```
 
 ## Practice the basic git commands
@@ -74,17 +77,17 @@ Pour Linux, [here is the procedure.](https://howtoinstall.co/en/git-flow)
 * [ ] What does this git command "git add -all" achieve (.gitignore impacts)?
 
 ```
-//TODO
+ajout tout les fichiers sauf ceux indiqués dans le fichier .gitignore
 ```
 
 * [ ] What does this git command "git status" achieve?
 
 ```
-//TODO
+affiche le statut de la branche actuel
 ```
 
 * [ ] What does this git command "git remote add upstream \<url>" achieve?
 
 ```
-//TODO
+ajout un dépôt de référence
 ```
